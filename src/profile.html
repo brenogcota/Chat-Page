@@ -15,16 +15,29 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
     <div class="container">
         <div class="row no-gutters">
+
+          <div class="col-md-2 profile">
+              <img class="profile-image-1" src="https://abrilsuperinteressante.files.wordpress.com/2018/07/mrrobot.jpg?quality=70&strip=info" alt="profile image">
+              <h3 class="profile-name">Eliot</h3>
+              <div class="links">
+                <i class="material-icons">home</i> <a href="#">HOME</a>
+              </div>
+              <div class="links">
+                <i class="material-icons">message</i><a href="#">CHAT </a>
+              </div>
+              <div class="links">
+                <i class="material-icons">settings</i><a href="#">SETTINGS</a>
+              </div>
+
+          </div>
+
            <div class="col-md-4 border-right">
             <div class="settings-tray">
-                <img class="profile-image" src="https://abrilsuperinteressante.files.wordpress.com/2018/07/mrrobot.jpg?quality=70&strip=info" alt="profile image">
-                <span class="settings-tray--right float-right">
-                    <i class="material-icons">cached</i> 
-                    <i class="material-icons">message</i>
-                    <i class="material-icons">menu</i>
-                </span>
+                <h3 class="text-muted">Chat</h3>
+                <i class="material-icons settings-tray float-right">message</i>
             </div>
             <div class="search-box">
               <div class="input-wrapper">
@@ -34,6 +47,7 @@
             </div>
            
 
+            <div id="divContent">
            <!--Friend 1-->
            <div class="friend-drawer friend-drower--onhover">
              <img src="https://fsmedia.imgix.net/78/6f/dd/8e/f233/4077/8d44/e7aa45b1bf15.jpeg?rect=0%2C186%2C750%2C375&auto=format%2Ccompress&dpr=2&w=650" alt="friend photo" class="profile-image">
@@ -81,11 +95,66 @@
                  Ontem
                </span>
              </div>
+             <hr>
+
+             
+             <div class="friend-drawer friend-drower--onhover">
+              <img src="https://www.usanetwork.com/sites/usanetwork/files/styles/full_episodes_633x356/public/mrrobot_s2_cast_martin_wallstrom.jpg?itok=UhGvS0Gk" alt="friend photo" class="profile-image">
+               <div class="text">
+                 <h5>Tyrel</h5>
+                 <p class="text-muted">Na segunda pego uma carona com você.</p>
+               </div>
+               <span class="time text-muted small">
+                 Ontem
+               </span>
+             </div>
+             <hr>
+
+             <div class="friend-drawer friend-drower--onhover">
+              <img src="https://www.usanetwork.com/sites/usanetwork/files/styles/full_episodes_633x356/public/mrrobot_s2_cast_martin_wallstrom.jpg?itok=UhGvS0Gk" alt="friend photo" class="profile-image">
+               <div class="text">
+                 <h5>Tyrel</h5>
+                 <p class="text-muted">Na segunda pego uma carona com você.</p>
+               </div>
+               <span class="time text-muted small">
+                 Ontem
+               </span>
+             </div>
+             <hr>
+
+             
+             <div class="friend-drawer friend-drower--onhover">
+              <img src="https://www.usanetwork.com/sites/usanetwork/files/styles/full_episodes_633x356/public/mrrobot_s2_cast_martin_wallstrom.jpg?itok=UhGvS0Gk" alt="friend photo" class="profile-image">
+               <div class="text">
+                 <h5>Tyrel</h5>
+                 <p class="text-muted">Na segunda pego uma carona com você.</p>
+               </div>
+               <span class="time text-muted small">
+                 Ontem
+               </span>
+             </div>
+             <hr>
+
+             
+             <div class="friend-drawer friend-drower--onhover">
+              <img src="https://www.usanetwork.com/sites/usanetwork/files/styles/full_episodes_633x356/public/mrrobot_s2_cast_martin_wallstrom.jpg?itok=UhGvS0Gk" alt="friend photo" class="profile-image">
+               <div class="text">
+                 <h5>Tyrel</h5>
+                 <p class="text-muted">Na segunda pego uma carona com você.</p>
+               </div>
+               <span class="time text-muted small">
+                 Ontem
+               </span>
+             </div>
+             
+
+
+            </div>
              
 
           </div> 
         
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div class="settings-tray">
             <div class="friend-drawer no-gutters friend-drawer--grey">
               <img src="https://fsmedia.imgix.net/78/6f/dd/8e/f233/4077/8d44/e7aa45b1bf15.jpeg?rect=0%2C186%2C750%2C375&auto=format%2Ccompress&dpr=2&w=650" alt="friend photo" class="profile-image">
@@ -96,46 +165,78 @@
               <span class="settings-tray--right float-right">
                     <i class="material-icons">call</i> 
                     <i class="material-icons">star</i>
+                    <i class="material-icons">menu</i>
               </span>
             </div>
           </div>
           <div class="chate-panel">
-            <div class="row no-gutters">
-              <div class="col-md-3">
-                <div class="chat-bubble chat-bubble--left">
-                  Hello Eliot
+            <div id="chat-divContent">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <div class="chat-bubble chat-bubble--left">
+                    Hello Eliot
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-md-3">
-                <div class="chat-bubble chat-bubble--left">
-                  Tudo bem?
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <div class="chat-bubble chat-bubble--left">
+                    Tudo bem?
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-md-3">
-                <div class="chat-bubble chat-bubble--left">
-                  Preciso de uma carona
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <div class="chat-bubble chat-bubble--left">
+                    Preciso de uma carona
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row no-gutters">
-              <div class="col-md-3 offset-md-9">
-                <div class="chat-bubble chat-bubble--right">
-                   De novo não!
+              <div class="row no-gutters">
+                <div class="col-md-3 offset-md-9">
+                  <div class="chat-bubble chat-bubble--right">
+                    De novo não!
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row no-gutters">
-              <div class="col-md-3 offset-md-9">
-                <div class="chat-bubble chat-bubble--right">
-                   Procure por outro.
+              <div class="row no-gutters">
+                <div class="col-md-3 offset-md-9">
+                  <div class="chat-bubble chat-bubble--right">
+                    Procure por outro.
+                  </div>
                 </div>
               </div>
+
+              <div class="row no-gutters">
+                  <div class="col-md-3 offset-md-9">
+                    <div class="chat-bubble chat-bubble--right">
+                      Procure por outro.
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-3 offset-md-9">
+                      <div class="chat-bubble chat-bubble--right">
+                        Procure por outro.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                      <div class="col-md-3 offset-md-9">
+                        <div class="chat-bubble chat-bubble--right">
+                          Procure por outro.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                          <div class="chat-bubble chat-bubble--right">
+                            Procure por outro.
+                          </div>
+                        </div>
+                      </div>
             </div>
 
             <div class="row">
@@ -154,9 +255,10 @@
       </div>
     </div>
 
-    
+    <script src="./profile.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/popper.js/dist/popper.js"></script>
+   
   </body>
 </html>
