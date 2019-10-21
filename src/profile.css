@@ -5,6 +5,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .container {
@@ -14,17 +15,23 @@ body {
     border-radius: 7px;   
 }
 
+#margin-top{
+  margin-top: 20px;
+}
+
 .profile-image-1 {
     width: 50px;
     height: 50px;
+    margin-left: 10px;
     border-radius: 25px;
-    margin-left: 50%;
     margin-top: 30px;
 }
 
 .profile-name {
-    margin-left: 50%;
+    float: right;
     color:  #868585;
+    margin-right: 45%;
+    margin-top: 44px;
 }
 .profile-image{
     width: 50px;
@@ -302,7 +309,7 @@ hr {
   .col-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 95%;
   }
   
 
@@ -316,28 +323,18 @@ hr {
     margin: 10px 30px;
     border-radius: 9px;
     position: relative;
-    animation: fadein 1s ease-in;
+    width: 200px;
 }
-
-.chat-bubble::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-bottom: 0;
-    margin-top: -10px;
-}
+ 
 
 
 .chat-bubble--right {
     padding: 10px 14px;
     background:  rgb(169, 238, 238);
-    margin: 10px 30px;
     border-radius: 9px;
     position: relative;
-    animation: fadein 1s ease-in;
+    width: 200px;
+    margin-left: -100px;
 }
 
 .chat-box-tray{
@@ -394,5 +391,92 @@ hr {
 #chat-divContent::-webkit-scrollbar{
     display: none;
 }
+
+
+
+@media (max-width: 768px) {
+
+  .chat-bubble {
+    width: 150px;
+    }
+
+    .chat-bubble--right{
+      width: 150px;
+    }
+
+    .profile{
+      margin-left: -7.5rem;
+      -webkit-transition: margin .25s ease-out;
+      -moz-transition: margin .25s ease-out;
+      -o-transition: margin .25s ease-out;
+      transition: margin .25s ease-out;
+    }
+
+
+    .col-md-4 {
+      -ms-flex: 0 0 50% !important;
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+    }
+
+    .col-12{
+      max-width: 95% !important;
+    }
+
+  
+}
+
+@media (max-width: 1000px){
+
+  .links a {
+    display: none;
+  }
+
+  .links i {
+    color: #868585;
+    padding: 10px 10px;
+    font-size: 25px;
+  }
+  
+
+  .links i:hover {
+    color:rgb(123, 241, 241);
+    cursor: pointer;
+  }
+
+  .links i:active {
+    color:rgb(123, 241, 241);
+  }
+
+  
+
+ 
+}
+
+@media (max-width: 1200px){
+  .profile-name {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px){
+
+  .links i {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1175px){
+  .settings-tray--right{
+    display: none;
+  }
+
+}
+
+
+
+
+
 
 
